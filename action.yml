@@ -1,7 +1,7 @@
 # action.yml
 name: 'GitHub Upload Release Artifacts'
 description: 'Upload Artifacts to a GitHub release.'
-author: 'Roang_zero1 <lucas@brandstaetter.tech>'
+author: 'linuxgemini <ilteris@asenkron.com.tr>'
 branding:
   icon: 'upload-cloud'
   color: 'yellow'
