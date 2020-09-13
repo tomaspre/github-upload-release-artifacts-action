@@ -30,11 +30,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Create GitHub release
-      uses: Roang-zero1/github-upload-release-artifacts-action@master
+      uses: linuxgemini/github-upload-release-artifacts-action@master
       with:
-        args:
-        - dist/bin/
-        - dist/shell/compiled.sh
+        args: "dist/bin/ dist/shell/compiled.sh"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
