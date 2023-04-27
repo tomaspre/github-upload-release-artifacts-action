@@ -37,7 +37,7 @@ fi
 
 for path in $@; do
   if [[ -d $path || -f $path ]]; then
-    /usr/local/bin/ghr -u "${GITHUB_REPOSITORY%/*}" -r "${GITHUB_REPOSITORY#*/}" "${TAG}" "${path}"
+    sh /usr/local/bin/ghr -u "${GITHUB_REPOSITORY%/*}" -r "${GITHUB_REPOSITORY#*/}" "${TAG}" "${path}"
   else
     echo "Invalid path passed: ${path}"
     exit 1
