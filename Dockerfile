@@ -11,6 +11,6 @@ RUN curl -s https://api.github.com/repos/tcnksm/ghr/releases/latest | \
     mv ghr_v*_linux_amd64/ghr /usr/local/bin && \
     rm -rf ghr*
 
-COPY entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
